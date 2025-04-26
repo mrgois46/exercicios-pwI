@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="registro.css">
+</head>
+
+<body>
+    <div class="content">
+        <nav>
+            <a href="/pwI-lista-8/Home/index.html"> <img src="/pwI-lista-8/assets/logo.png" alt=""
+                    class="logo"></a>
+            <div class="nav-items">
+                <ul>
+                    <li>SMARTPHONES</li>
+                    <li>TABLETS</li>
+                    <li>COMPUTADORES</li>
+                </ul>
+            </div>
+            <div class="register">
+                <ul>
+                    <a href="/pwI-lista-8/Login/login.html">
+                        <li>LOGIN</li>
+                    </a>
+                    <a href="/pwI-lista-8/Registro/registro.html">
+                        <li>REGISTRAR</li>
+                    </a>
+                </ul>
+            </div>
+        </nav>
+        <div class="content-register">
+            <form action="">
+                <div class="title-form">
+                    <h2>REGISTRAR</h2>
+                </div>
+                <div class="register">
+                    <div class="register-box">
+                        <p>Nome</p>
+                        <input type="text" name="nome" id="" placeholder="Seu nome aqui" required>
+                        <p class="obrigatorio">Obrigatório.</p>
+                    </div>
+
+                    <div class="register-box">
+                        <p>Email</p>
+                        <input type="email" name="email" id="" placeholder="email@email.com" required>
+                        <p class="obrigatorio">Obrigatório.</p>
+                    </div>
+
+                    <div class="register-box">
+                        <p>Senha</p>
+                        <input type="password" name="senha" id="" placeholder="senha" required>
+                        <p class="obrigatorio">Obrigatório.</p>
+                    </div>
+
+
+                    <div class="country">
+                        <h3>País de Nascimento</h3>
+                        <input type="text" list="countrys" name="country" />
+                        <datalist id="countrys">
+                            <option value="Chile"></option>
+                            <option value="Brasil"></option>
+                            <option value="Estados Unidos"></option>
+                            <option value="França"></option>
+                            <option value="Outro"></option>
+                        </datalist>
+                        <p class="obrigatorio">Obrigatório.</p>
+                    </div>
+
+
+
+
+                    <div class="gener">
+                        <h3>Genero</h3>
+                        <div class="radio">
+                            <input type="radio" value="masculino" name="gener">
+                            <label for="masculino">masculino</label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" value="feminino" name="gener">
+                            <label for="feminino">feminino</label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" value="no-comment" name="gener">
+                            <label for="nao-dizer">Prefiro não dizer</label>
+                        </div>
+                    </div>
+
+
+
+                    <div class="hobbies">
+                        <h3>Hobbies</h3>
+                        <div class="hobbies-box">
+                            <input type="checkbox" name="optinals[]" value="guitar">
+                            <label for="guitar">Guitarra</label>
+                        </div>
+
+                        <div class="hobbies-box">
+                            <input type="checkbox" name="optinals[]" value="soccer">
+                            <label for="soccer">Futebol</label>
+                        </div>
+
+                        <div class="hobbies-box">
+                            <input type="checkbox" name="optinals[]" value="tenis">
+                            <label for="tenis">Tenis</label>
+                        </div>
+                        <div class="hobbies-box">
+                            <input type="checkbox" name="optinals[]" value="programacao">
+                            <label for="programacao">Programação</label>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <h3>Comentários</h3>
+                        <textarea name="comment" id=""></textarea>
+                    </div>
+                    <div class="termos">
+                        <input type="checkbox" name="optinals[]" value="termos">
+                        <label for="termos">Aceito os termos de condição</label>
+                       
+                    </div>
+                    <div class="btn">
+                        <button type="submit">Registrar</button>
+                        <button type="reset">Cancelar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+</body>
+
+</html>
